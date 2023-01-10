@@ -1,8 +1,7 @@
 package programs;
 
-import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
-import org.testng.Reporter;
+
+
 import org.testng.annotations.Test;
 
 import genericLibrary.BaseClass;
@@ -50,11 +49,11 @@ public void addToCartTest()
 	//Assert.assertEquals(ProductName,"Sauce Labs Bolt T-Shirt");
 	if(ProductName.equalsIgnoreCase("Sauce Labs Bolt T-Shirt"))
 	{
-		System.out.println("passed");
+		System.out.println("test is passed");
 	}
 	else 
 	{
-		System.out.println("failed");
+		System.out.println("test is failed");
 	}
 			
 	
