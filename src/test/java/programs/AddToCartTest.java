@@ -31,10 +31,10 @@ public void addToCartTest()
 
 	
 	ProductsPage pp=new ProductsPage(driver);
-	//pp.getboltTshirtLnk().click();
+	
 	pp.clickboltTShirtLnk();
 	BackToProductsPage bp=new BackToProductsPage(driver);
-	//bp.getAddToCartBtn().click();
+	
 	bp.getAddToCartImg().click();
 	
 	YourCartPage ycp=new YourCartPage(driver);
@@ -46,14 +46,14 @@ public void addToCartTest()
 	CheckOutOverViewPage cop=new CheckOutOverViewPage(driver);
 	
 	String ProductName = cop.getInventoryItemNameTxt().getText();
-	//Assert.assertEquals(ProductName,"Sauce Labs Bolt T-Shirt");
+	
 	if(ProductName.equalsIgnoreCase("Sauce Labs Bolt T-Shirt"))
 	{
 		System.out.println("test is passed");
 	}
 	else 
 	{
-		System.out.println("test is failed");
+		System.out.println("test failed");
 	}
 			
 	
